@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barclays App</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            color: navy;
+            font-family: fantasy;
+        }
+        .accounts {
+            display: flex;
+        }
+        .savings-account {
+            border: 7px double navy;
+            padding: 60px 30px;
+            background-color: skyblue;
+        }
+        .savings-account div {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+        .savings-account h2 {
+            margin-top: 0;
+        }
+        input {
+            padding: 5px;
+            border-radius: 3px;
+        }
+        button {
+            background-color: navy;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Barclays Bank</h1>
+    <section class="accounts">
+        <article class="savings-account">
+            <h2>Savings Account</h2>
+            <div>Balance: $<span id="savings-balance">0</span></div>
+            <input type="text" id="savings-amount">
+            <button id="savings-deposit">Deposit</button>
+            <button id="savings-withdraw">Withdraw</button>
+        </article>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
